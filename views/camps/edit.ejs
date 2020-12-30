@@ -1,0 +1,21 @@
+<%- include("../partials/header")%>
+<div class="container">
+	<div class="row">
+		<h1 style="text-align:center;">Edit<%=camp.name%></h1>
+		<div style="width:30%;margin:0 auto;">
+			<form  action="/camp/<%=camp._id%>?_method=PUT" method="POST">
+				<input class="form-control" type="text" name="camp[name]" value="<%=camp.name%>">
+				<input class="form-control" type="number" name="camp[price]" value="<%=camp.price%>" min="1" step="0.5">
+				<input class="form-control" type="text" name="camp[image]" value="<%=camp.image%>">
+				<input class="form-control" type="text" name="camp[descp]" value="<%=camp.descp%>">
+				<button class="btn btn-large btn-primary btn-block">Submit</button>
+			</form>
+ 			<a href="/camp">Go Back</a>
+		</div>	
+	</div>		
+</div>
+			
+
+
+
+<%- include("../partials/footer")%>

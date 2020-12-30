@@ -1,0 +1,21 @@
+<%- include("../partials/header")%>
+<div class="container">
+	<div class="row">
+		<h1 style="text-align:center;"> Create a new camp </h1>
+		<div style="width:30%;margin:0 auto;">
+			<form  action="/camp" method="POST">
+				<input class="form-control" type="text" name="name" placeholder="name">
+				<input class="form-control" type="number" name="price" placeholder="price" min="1" step="0.5">
+				<input class="form-control" type="text" name="image" placeholder="iamge url">
+				<input class="form-control" type="text" name="descp" placeholder="description">
+				<button class="btn btn-large btn-primary btn-block">Submit</button>
+			</form>
+			<a href="/camp">Go Back</a>
+		</div>	
+	</div>		
+</div>
+			
+
+
+
+<%- include("../partials/footer")%>
